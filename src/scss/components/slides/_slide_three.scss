@@ -1,0 +1,73 @@
+.slide_three {
+  background-color: rgba(240, 240, 240, 1);
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &--inner {
+    padding: 50px 50px 70px 50px;
+    width: 87%;
+    display: inline-block;
+    //left: 0;
+  }
+
+  &__header {
+    font-size: 45px;
+  }
+
+  &__description {
+    margin: 16px 0;
+  }
+
+  &__list {
+
+    &-item {
+      width: 49%;
+      display: inline-block;
+      position: relative;
+      margin-top: 50px;
+
+      &--text {
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+
+        &__inner {
+          position: absolute;
+          top: 19%;
+          margin-left: 15px;
+
+          h3, h2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 100;
+            font-size: 28px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  &__list-of-skills {
+
+    li {
+      position: relative;
+      margin-top: 50px;
+      height: 20px;
+
+      span.desc{
+        position: absolute;
+        left: 100px;
+        bottom: 2px;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: "Anton", sans-serif;
+      }
+    }
+
+  }
+
+}

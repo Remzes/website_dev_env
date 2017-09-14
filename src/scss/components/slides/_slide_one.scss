@@ -1,0 +1,108 @@
+.slide_one {
+  overflow: hidden;
+
+  &--inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__description {
+      & {
+        height: 300px;
+        width: 600px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Oswald', sans-serif;
+      }
+
+      &--intro {
+
+        transition: text-shadow ease-in-out .2s;
+        text-shadow: 0 0 5px #fff;
+
+        &__welcome {
+          p {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+
+            &:first-of-type {
+              font-size: 60px;
+            }
+
+            &:nth-of-type(2) {
+              font-size: 45px;
+            }
+          }
+        }
+
+        &__instruction {
+            margin-top: 10px;
+            font-family: 'Open Sans Condensed', sans-serif !important;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &__slide {
+      transition: opacity ease-in-out 2s;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+
+      &.one {
+        background: url(../../../../assets/images/home/image1.png) center center no-repeat;
+        background-size: cover;
+      }
+
+      &.two {
+        background: url(../../../../assets/images/home/image2.png) center center no-repeat;
+        background-size: cover;
+      }
+
+      &.three {
+        background: url(../../../../assets/images/home/image3.png) center center no-repeat;
+        background-size: cover;
+      }
+
+      &.four {
+        background: url(../../../../assets/images/home/image4.png) center center no-repeat;
+        background-size: cover;
+      }
+
+      &.five {
+        background: url(../../../../assets/images/home/image6.png) center center no-repeat;
+        background-size: cover;
+      }
+
+      &.selected {
+        opacity: 1 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.slide_four {
+  background-color: #fff;
+  position: relative;
+
+  &--inner {
+    padding: 50px 50px 0 50px;
+  }
+
+  .slide_four__description {
+    margin: 16px 0;
+  }
+
+  &__info {
+    margin-top: 20px;
+  }
+
+  &__info--item {
+
+    &__brief {
+      position: relative;
+      //padding: 10px;
+
+      .image {
+        display: inline-block;
+        float: right;
+      }
+
+      .intro {
+        display: inline-block;
+
+        .company {
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        .period {
+
+        }
+
+        &:after {
+          height: 0;
+          visibility: hidden;
+          clear: both;
+          display: inline-block;
+          content: "";
+        }
+      }
+    }
+
+    &__desc {
+      ul {
+        margin-left: 26px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        line-height: 21px;
+
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+
+}

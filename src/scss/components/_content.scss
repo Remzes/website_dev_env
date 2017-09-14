@@ -1,0 +1,23 @@
+.content {
+  position: relative;
+  width: 7300px;
+  height: 100%;
+  z-index: 1;
+  margin-left: 200px;
+  display: flex;
+  transition: transform ease-in-out .6s;
+  //transform: translateX(-4803px); //TEMPORARY !!!!
+
+  &__slide {
+    background-color: rgba(189, 230, 199, 1);
+    width: 800px;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+#cont, #cont1, #cont2 {
+  margin: 20px;
+  width: 400px;
+  height: 16px;
+}

@@ -1,0 +1,135 @@
+.slide_five {
+  background-color: #f0f0f0;
+
+  &--inner {
+    padding: 50px;
+  }
+
+  &__description {
+    margin: 16px 0;
+  }
+
+  &__college {
+
+    &:after {
+      content: "";
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      display: inline-block;
+    }
+
+    &__brief {
+      position: relative;
+
+      .image {
+        display: inline-block;
+        float: right;
+      }
+
+      .intro {
+        display: inline-block;
+
+        .company {
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        &:after {
+          height: 0;
+          visibility: hidden;
+          clear: both;
+          display: inline-block;
+          content: "";
+        }
+      }
+    }
+
+    &__desc {
+      margin: 15px auto 0 auto;
+      width: 97%;
+      line-height: 25px;
+      display: flex;
+      justify-content: space-around;
+
+      &__courses {
+
+        display:inline-block;
+        margin: 0 !important;
+
+        li {
+          list-style-type: none !important;
+        }
+      }
+    }
+  }
+
+  &__volunteer {
+    ul {
+      margin-left: 26px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      line-height: 21px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+
+  &__info--item {
+
+    &__brief {
+      position: relative;
+      //padding: 10px;
+
+      .image {
+        display: inline-block;
+        float: right;
+      }
+
+      .intro {
+        display: inline-block;
+
+        .company {
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        .period {
+
+        }
+
+        &:after {
+          height: 0;
+          visibility: hidden;
+          clear: both;
+          display: inline-block;
+          content: "";
+        }
+      }
+    }
+
+    &__desc {
+      ul {
+        margin-left: 26px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        line-height: 21px;
+
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+
+}

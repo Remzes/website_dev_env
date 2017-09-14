@@ -1,0 +1,32 @@
+.slide_three__list-item--radial-progress {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+
+  .progressbar-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 34px;
+  };
+}
+
+.line_progress-bar {
+  margin-left: 100px;
+  width: 500px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 17px;
+
+  .progressbar-text {
+    position: absolute;
+    top: -8px !important;
+    left: -56px !important;
+    font-family: "Oswald", sans-serif;
+    font-size: 46px;
+    color: rgb(85, 85, 85) !important;
+
+    span {
+      font-size: 22px;
+    }
+  }
+}
